@@ -17,6 +17,7 @@ Fill these in once, using the setup flow below. Anything marked "not set" means 
 - **Work is tracked in:** not set
 - **Decisions are discussed in:** not set
 - **Codebase:** not set
+- **Designs are in:** not set
 - **Voice:** not set
 - **Extra template sections:** none
 - **Outside rules to check:** none
@@ -28,10 +29,11 @@ Run setup when any setting above says "not set", or when the person asks to set 
 Ask these one round at a time. Offer the listed choices, and accept any other answer.
 
 1. **Where do your specs live?** Notion, Linear documents, Confluence, Google Docs, files in the code repository, or somewhere else.
-2. **Where is work tracked?** Linear, Jira, Asana, GitHub Issues, or somewhere else.
+2. **Where is work tracked?** Linear, Jira, monday.com, Asana, GitHub Issues, or somewhere else.
 3. **Where do decisions get discussed?** Slack, Microsoft Teams, email, or somewhere else.
 4. **Is there a codebase to read?** A repository name, or none.
-5. **House rules.** Whose voice the spec is written in (for example "plain, short sentences, we"). Any sections to add to the template. Any outside rules that usually apply, such as a regulator or a partner.
+5. **Where are your designs?** Figma, or none.
+6. **House rules.** Whose voice the spec is written in (for example "plain, short sentences, we"). Any sections to add to the template. Any outside rules that usually apply, such as a regulator or a partner.
 
 Then:
 
@@ -53,6 +55,7 @@ Before asking anything, read what the person points to and look for more:
 - Any decision page, brief or earlier spec they link.
 - Related documents, issues and threads in the tools named in Settings, if you can reach them.
 - The codebase, if there is one and you can reach it. Find where the feature touches today's code and note the files. This often shows things the brief missed.
+- The designs, if there are any and you can reach them. Note each screen and state the designs show, and any state the designs are missing, such as errors, empty screens and loading.
 - Outside rules. If a regulator, partner or provider sets a rule, look it up, quote the source and link it. Never state a rule from memory.
 
 Tell the person in a few lines what you found, especially anything that conflicts with their brief.
@@ -85,6 +88,7 @@ Use the template below, plus any extra sections named in Settings.
 - State what is enforced on the server, what is stored and what is logged.
 - Where a rule comes from outside, quote it and link the source.
 - Where the code is relevant, name the files or areas a criterion touches.
+- Where a design exists, link the screen a criterion covers. Where a criterion has no design, say so in the open tasks.
 
 ### 5. List assumptions and open tasks
 
