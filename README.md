@@ -10,7 +10,7 @@ AI agents build what the spec says and nothing more. If a spec is vague, the age
 
 ## What it does
 
-1. **Gathers what exists.** It reads the brief you point to, related documents and tickets, and the codebase if it can reach one. It looks up outside rules and quotes the source.
+1. **Gathers what exists.** It reads the brief you point to, related documents and tickets, the codebase and the designs if it can reach them. It looks up outside rules and quotes the source.
 2. **Interviews you.** Small rounds of questions. It pushes hardest on edge cases, error states, limits and what existing users see.
 3. **Writes the spec** in a fixed template, with numbered, closed acceptance criteria.
 4. **Lists what it assumed** and what is still open, with an owner for each.
@@ -33,13 +33,14 @@ In Claude Code, copy the `product-spec` folder into your skills folder.
 
 ## Setup
 
-The first time you use it, the skill asks five questions:
+The first time you use it, the skill asks six questions:
 
 1. Where do your specs live? (Notion, Linear, Confluence, Google Docs, the code repository)
-2. Where is work tracked? (Linear, Jira, Asana, GitHub Issues)
+2. Where is work tracked? (Linear, Jira, monday.com, Asana, GitHub Issues)
 3. Where do decisions get discussed? (Slack, Microsoft Teams, email)
-4. Is there a codebase to read?
-5. Any house rules: voice, extra template sections, outside rules to check.
+4. Is there a codebase to read? (GitHub)
+5. Where are your designs? (Figma)
+6. Any house rules: voice, extra template sections, outside rules to check.
 
 It then checks which of those tools are connected and tells you which ones are missing. You connect tools in your own Claude settings. The skill cannot do that for you.
 
